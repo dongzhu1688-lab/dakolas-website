@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 112" role="img" aria-label="DAKOLAS logo">
+  <rect x="0" y="0" width="112" height="112" rx="18" fill="#0756b8"/>
+  <path d="M30 31h26c19 0 31 9.7 31 25s-12 25-31 25H30V31Zm18 16v18h8c8.5 0 13-3.1 13-9s-4.5-9-13-9h-8Z" fill="#fff"/>
+  <text x="136" y="67" fill="#073b84" font-family="Arial, Helvetica, sans-serif" font-size="46" font-weight="800" letter-spacing="2">DAKOLAS</text>
+  <text x="140" y="92" fill="#5e6b7e" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="600">Professional Mobile Parts Supplier</text>
+</svg>
