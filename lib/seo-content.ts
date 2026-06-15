@@ -84,6 +84,19 @@ const configs: SeoArticleConfig[] = [
     relatedProducts: "iPhone compatible screens, iPhone compatible batteries, Samsung compatible screens, Samsung compatible batteries, iPad parts, and MacBook parts"
   },
   {
+    slug: "repair-parts-wholesale",
+    keyword: "repair parts wholesale",
+    buyer: "repair shop networks, wholesalers, distributors, importers, and trading companies building repair-parts catalogs",
+    productFocus: "wholesale repair parts including iPhone compatible screens, iPhone compatible batteries, Samsung compatible screens, Samsung compatible batteries, iPad parts, and MacBook parts",
+    qualityLines: "Premium OLED, Soft OLED, Hard OLED, INCELL, Premium Battery, Standard Battery, Samsung compatible parts, tablet repair parts, and laptop repair parts",
+    purchaseUse: "multi-category wholesale orders, repair-shop replenishment, distributor catalogs, country-specific supply programs, and mixed carton planning",
+    qcFocus: "display testing, touch testing, brightness review, battery capacity checks, appearance inspection, connector checks, and final packing control",
+    marketNeed: "buyers need a wholesale supplier that can organize many repair categories into clear quotation and reorder workflows",
+    supplyRisk: "mixed quality, weak labels, fragmented sourcing, poor packing, unclear warranty terms, and slow communication across categories",
+    commercialAngle: "repair-parts wholesale works best when buyers can combine categories, compare product lines, and receive practical model-level quotation support",
+    relatedProducts: "iPhone compatible screens, iPhone compatible batteries, Samsung compatible parts, iPad parts, MacBook parts, product lines, and country supply pages"
+  },
+  {
     slug: "samsung-screen-supplier",
     keyword: "Samsung compatible screen supplier",
     buyer: "repair shops, Samsung repair specialists, wholesalers, regional distributors, and mixed mobile-parts buyers",
@@ -95,6 +108,58 @@ const configs: SeoArticleConfig[] = [
     supplyRisk: "wrong model selection, fragile packing, unclear grade expectations, and shipment delays during fast-moving demand periods",
     commercialAngle: "a focused supplier helps buyers quote Samsung compatible screens with clearer specifications, stable packing, and practical delivery planning",
     relatedProducts: "Samsung compatible batteries, iPhone compatible screens, iPhone compatible batteries, iPad parts, and MacBook parts"
+  },
+  {
+    slug: "iphone-screen-manufacturer",
+    keyword: "iPhone compatible screen manufacturer",
+    buyer: "repair shops, refurbishers, wholesalers, distributors, and purchasing teams comparing direct screen supply partners",
+    productFocus: "iPhone compatible screen assemblies from IP6 Series to IP16 Series across Premium OLED, Soft OLED, Hard OLED, and INCELL lines",
+    qualityLines: "Premium OLED for high-end display repair, Soft OLED for flexible OLED demand, Hard OLED for controlled OLED pricing, and INCELL for practical high-volume replacement",
+    purchaseUse: "factory-linked sourcing, model-level quotation, distributor catalog building, wholesale screen orders, and repair network replenishment",
+    qcFocus: "incoming material review, display testing, touch testing, brightness checking, appearance inspection, and export packing confirmation",
+    marketNeed: "buyers need manufacturer-style supply communication that connects product line, model coverage, quality control, packing, and warranty terms",
+    supplyRisk: "unclear production standards, inconsistent model availability, vague grade names, poor packaging, and weak after-sales records",
+    commercialAngle: "manufacturer-style sourcing helps buyers discuss model demand, quality level, MOQ, packing, and reorder planning with more detail",
+    relatedProducts: "Premium OLED, Soft OLED, Hard OLED, INCELL, iPhone compatible batteries, Samsung compatible screens, and iPad parts"
+  },
+  {
+    slug: "iphone-battery-manufacturer",
+    keyword: "iPhone compatible battery manufacturer",
+    buyer: "battery wholesalers, repair shops, distributor replenishment teams, and service centers buying replacement batteries",
+    productFocus: "iPhone compatible replacement batteries across Premium Battery and Standard Battery lines from IP6 Series to IP16 Series",
+    qualityLines: "Premium Battery for capacity-confidence programs and Standard Battery for practical replacement demand with controlled wholesale cost",
+    purchaseUse: "battery replacement service, mixed battery cartons, distributor stock planning, service-center replenishment, and market testing",
+    qcFocus: "capacity testing, output checking, connector review, appearance inspection, label confirmation, and final packing review",
+    marketNeed: "buyers need battery supply that combines clear model coverage, capacity expectations, export packing, and 12 months warranty communication",
+    supplyRisk: "unclear capacity, mixed model labels, connector issues, weak packing, and confusing warranty handling",
+    commercialAngle: "battery sourcing works better when buyers can prepare model-level requests and compare Premium Battery and Standard Battery options clearly",
+    relatedProducts: "iPhone compatible screens, Premium Battery, Standard Battery, Samsung compatible batteries, iPad parts, and MacBook parts"
+  },
+  {
+    slug: "oled-screen-manufacturer",
+    keyword: "OLED screen manufacturer",
+    buyer: "premium repair shops, display wholesalers, refurbishers, distributor buyers, and international mobile-parts importers",
+    productFocus: "OLED screen supply for iPhone compatible repair programs, including Premium OLED, Soft OLED, and Hard OLED product lines",
+    qualityLines: "Premium OLED for premium display positioning, Soft OLED for flexible OLED repair demand, and Hard OLED for OLED supply with stronger price control",
+    purchaseUse: "premium screen repair, refurbishment programs, wholesale OLED cartons, distributor product-line expansion, and model-level sourcing",
+    qcFocus: "color performance, brightness review, touch response, flex condition, frame appearance, connector checks, and final inspection",
+    marketNeed: "buyers need OLED sourcing language that is clear enough for repair-shop customers and structured enough for wholesale catalog planning",
+    supplyRisk: "grade confusion, inconsistent brightness, touch issues, vague OLED claims, fragile packing, and warranty disputes",
+    commercialAngle: "a practical OLED manufacturer page helps buyers compare lines, confirm model demand, and request quotations with better technical context",
+    relatedProducts: "Premium OLED, Soft OLED, Hard OLED, INCELL, iPhone compatible batteries, Samsung compatible screens, and quality control pages"
+  },
+  {
+    slug: "mobile-phone-parts-manufacturer",
+    keyword: "mobile phone parts manufacturer",
+    buyer: "repair shops, wholesalers, distributors, importers, trading companies, and mobile repair catalog managers",
+    productFocus: "mobile phone screens, mobile phone batteries, iPad parts, MacBook parts, and supporting repair components",
+    qualityLines: "screen product lines, battery product lines, Samsung compatible parts, tablet repair parts, and laptop repair parts organized for B2B quotation",
+    purchaseUse: "multi-category sourcing, distributor catalog planning, repair-shop replenishment, mixed cartons, and country-specific wholesale supply",
+    qcFocus: "display checks, touch testing, battery capacity checks, appearance review, connector checks, labeling, and final packing control",
+    marketNeed: "buyers need a manufacturer-style supplier that can organize multiple categories into one professional sourcing conversation",
+    supplyRisk: "fragmented sourcing, inconsistent category language, weak packing, unclear product hierarchy, and slow response across mixed orders",
+    commercialAngle: "multi-category sourcing helps buyers reduce supplier management time and build a more complete repair-parts catalog",
+    relatedProducts: "iPhone compatible screens, iPhone compatible batteries, Samsung compatible screens, Samsung compatible batteries, iPad parts, and MacBook parts"
   }
 ];
 

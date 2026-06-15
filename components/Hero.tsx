@@ -1,6 +1,8 @@
 import Image from "next/image";
 import { ButtonLink } from "@/components/ButtonLink";
-import { productHierarchy, sellingPoints } from "@/lib/site";
+import { LeadCTAGroup } from "@/components/LeadCTAGroup";
+import { TrustBadges } from "@/components/TrustBadges";
+import { productHierarchy } from "@/lib/site";
 
 export function Hero() {
   return (
@@ -16,16 +18,14 @@ export function Hero() {
           <p className="mt-5 max-w-xl text-base leading-7 text-[#5e6b7e]">
             DAKOLAS supports global B2B buyers with tested iPhone compatible screens, batteries, Samsung compatible screens, tablet parts, laptop parts, export packing, and stable wholesale supply.
           </p>
-          <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-            <ButtonLink href="/products/">View Products</ButtonLink>
-            <ButtonLink href="/contact/" variant="secondary">Get Quote</ButtonLink>
+          <div className="mt-8 grid gap-3">
+            <LeadCTAGroup />
+            <div className="flex">
+              <ButtonLink href="/products/" variant="secondary">View Products</ButtonLink>
+            </div>
           </div>
-          <div className="mt-10 grid max-w-2xl grid-cols-2 gap-3 sm:grid-cols-5">
-            {sellingPoints.map((point) => (
-              <div key={point} className="rounded-md border border-[#c6d9ef] bg-white px-3 py-3 text-center text-xs font-bold text-[#073b84] shadow-sm">
-                {point}
-              </div>
-            ))}
+          <div className="mt-10">
+            <TrustBadges compact />
           </div>
           <div className="mt-8 grid gap-3 sm:grid-cols-2">
             {productHierarchy.map((group) => (

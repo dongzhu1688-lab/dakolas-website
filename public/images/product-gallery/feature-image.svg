@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" role="img" aria-labelledby="title desc">
+  <title id="title">DAKOLAS product feature image</title>
+  <desc id="desc">Feature render showing tested quality, stable supply, fast delivery, and 12 months warranty.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f8fbff"/>
+      <stop offset="1" stop-color="#eaf4ff"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="16" flood-color="#071f45" flood-opacity=".14"/>
+    </filter>
+  </defs>
+  <rect width="960" height="600" fill="url(#bg)"/>
+  <rect x="70" y="58" width="820" height="484" rx="28" fill="#fff" stroke="#d9e5f4"/>
+  <g filter="url(#shadow)">
+    <circle cx="228" cy="214" r="78" fill="#0756b8"/>
+    <path d="m194 214 25 25 52-62" fill="none" stroke="#fff" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="372" y="144" width="366" height="34" rx="17" fill="#0756b8"/>
+    <rect x="372" y="216" width="462" height="34" rx="17" fill="#b9cee8"/>
+    <rect x="372" y="288" width="308" height="34" rx="17" fill="#b9cee8"/>
+    <rect x="132" y="372" width="178" height="70" rx="16" fill="#eaf4ff"/>
+    <rect x="338" y="372" width="178" height="70" rx="16" fill="#eaf4ff"/>
+    <rect x="544" y="372" width="178" height="70" rx="16" fill="#eaf4ff"/>
+  </g>
+  <text x="164" y="416" font-family="Arial, sans-serif" font-size="20" font-weight="800" fill="#073b84">100% Tested</text>
+  <text x="370" y="416" font-family="Arial, sans-serif" font-size="20" font-weight="800" fill="#073b84">Fast Delivery</text>
+  <text x="574" y="416" font-family="Arial, sans-serif" font-size="20" font-weight="800" fill="#073b84">12 Months</text>
+</svg>

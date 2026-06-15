@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" role="img" aria-labelledby="title desc">
+  <title id="title">DAKOLAS product structure image</title>
+  <desc id="desc">Exploded structure render showing mobile screen layers and connector details.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f8fbff"/>
+      <stop offset="1" stop-color="#dceeff"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="20" stdDeviation="18" flood-color="#071f45" flood-opacity=".15"/>
+    </filter>
+  </defs>
+  <rect width="960" height="600" fill="url(#bg)"/>
+  <rect x="70" y="58" width="820" height="484" rx="28" fill="#fff" stroke="#d9e5f4"/>
+  <g filter="url(#shadow)">
+    <rect x="178" y="132" width="150" height="320" rx="24" fill="#071f45"/>
+    <rect x="386" y="154" width="150" height="320" rx="24" fill="#0756b8" opacity=".92"/>
+    <rect x="594" y="176" width="150" height="320" rx="24" fill="#071f45"/>
+  </g>
+  <path d="M332 292h46M540 314h46" stroke="#b9cee8" stroke-width="8" stroke-linecap="round" stroke-dasharray="14 14"/>
+  <rect x="214" y="178" width="78" height="178" rx="10" fill="#eaf4ff"/>
+  <rect x="422" y="200" width="78" height="178" rx="10" fill="#d9ebff"/>
+  <rect x="630" y="222" width="78" height="178" rx="10" fill="#eaf4ff"/>
+  <text x="118" y="112" font-family="Arial, sans-serif" font-size="24" font-weight="800" fill="#073b84">Component Structure</text>
+  <text x="118" y="144" font-family="Arial, sans-serif" font-size="17" fill="#5e6b7e">Layer, connector and repair detail reference</text>
+</svg>

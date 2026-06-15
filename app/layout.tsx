@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
+import { FloatingInquiryBar } from "@/components/FloatingInquiryBar";
 import { Footer } from "@/components/Footer";
+import { GoogleAnalytics } from "@/components/GoogleAnalytics";
 import { Header } from "@/components/Header";
 import { StickyWhatsApp } from "@/components/StickyWhatsApp";
 import { siteConfig } from "@/lib/site";
@@ -23,6 +25,16 @@ const organizationJsonLd = {
   slogan: siteConfig.slogan,
   email: siteConfig.email,
   description: siteConfig.description,
+  contactPoint: [
+    {
+      "@type": "ContactPoint",
+      contactType: "sales",
+      email: siteConfig.email,
+      availableLanguage: ["English"],
+      areaServed: "Worldwide"
+    }
+  ],
+  areaServed: ["Worldwide", "United Kingdom", "Australia", "Germany", "France", "Italy"],
   sameAs: []
 };
 
@@ -30,10 +42,12 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="en">
       <body>
+        <GoogleAnalytics />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }} />
         <Header />
         <main>{children}</main>
         <StickyWhatsApp />
+        <FloatingInquiryBar />
         <Footer />
       </body>
     </html>

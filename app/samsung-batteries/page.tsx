@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
 import { CTASection } from "@/components/CTASection";
+import { FAQSection } from "@/components/FAQSection";
 import { ProductCard } from "@/components/ProductCard";
+import { ProductSeriesGrid } from "@/components/ProductSeriesGrid";
 import { QuoteRequestSection } from "@/components/QuoteRequestSection";
 import { SectionHeading } from "@/components/SectionHeading";
+import { getCategory } from "@/lib/product-database";
 import { createMetadata } from "@/lib/metadata";
 
 export const metadata: Metadata = createMetadata({
@@ -12,6 +15,8 @@ export const metadata: Metadata = createMetadata({
 });
 
 export default function SamsungBatteriesPage() {
+  const category = getCategory("samsung-batteries");
+
   return (
     <>
       <section className="section bg-[#f6fbff]">
@@ -27,7 +32,14 @@ export default function SamsungBatteriesPage() {
           </div>
         </div>
       </section>
+      <section className="section">
+        <div className="container">
+          <SectionHeading title="Samsung Battery Series" description="Dedicated Samsung compatible battery pages from S20 to S25 Series." />
+          {category ? <ProductSeriesGrid products={category.products} /> : null}
+        </div>
+      </section>
       <QuoteRequestSection productInterest="Samsung compatible batteries" />
+      <FAQSection title="Samsung Compatible Batteries FAQ" />
       <CTASection />
     </>
   );

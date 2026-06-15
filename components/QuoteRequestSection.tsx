@@ -1,5 +1,7 @@
+import { CustomerInquiryWorkflow } from "@/components/CustomerInquiryWorkflow";
 import { InquiryForm } from "@/components/InquiryForm";
 import { SectionHeading } from "@/components/SectionHeading";
+import { TrustBadges } from "@/components/TrustBadges";
 
 export function QuoteRequestSection({ productInterest = "mobile parts" }: { productInterest?: string }) {
   return (
@@ -14,8 +16,14 @@ export function QuoteRequestSection({ productInterest = "mobile parts" }: { prod
             <p>For faster handling, include model series, quality line, MOQ target, and whether the order is for repair shops, wholesale resale, or distributor stock.</p>
             <p>All DAKOLAS warranty terms are 12 months and all goods follow defined inspection steps before shipment.</p>
           </div>
+          <div className="mt-8">
+            <TrustBadges compact />
+          </div>
+          <div className="mt-8">
+            <CustomerInquiryWorkflow compact />
+          </div>
         </div>
-        <InquiryForm />
+        <InquiryForm productInterest={productInterest} />
       </div>
     </section>
   );

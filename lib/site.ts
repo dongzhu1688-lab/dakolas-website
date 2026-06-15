@@ -1,10 +1,15 @@
+const whatsappMessage =
+  "Hello DAKOLAS, I would like to request a quote for mobile parts. My company is interested in wholesale supply.";
+const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER?.replace(/\D/g, "") ?? "";
+
 export const siteConfig = {
   name: "DAKOLAS",
   slogan: "Professional Mobile Parts Supplier",
-  url: "https://dakolas.com",
+  url: "https://dakolasparts.com",
   email: "sales@dakolas.com",
-  whatsappHref:
-    "https://wa.me/?text=Hello%20DAKOLAS%2C%20I%20would%20like%20to%20request%20a%20quote%20for%20mobile%20parts.",
+  whatsappHref: `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`,
+  formspreeEndpoint: process.env.NEXT_PUBLIC_FORMSPREE_ENDPOINT ?? "https://formspree.io/f/YOUR_FORM_ID",
+  gaId: process.env.NEXT_PUBLIC_GA_ID ?? "",
   description:
     "DAKOLAS supplies premium iPhone compatible screens, iPhone compatible batteries, Samsung compatible screens, Samsung compatible batteries, iPad parts, and MacBook parts for repair shops, wholesalers, and distributors worldwide."
 };
@@ -14,6 +19,7 @@ export const navItems = [
   { label: "Products", href: "/products/" },
   { label: "Factory", href: "/factory/" },
   { label: "Quality Control", href: "/quality-control/" },
+  { label: "Why DAKOLAS", href: "/why-dakolas/" },
   { label: "About Us", href: "/about/" },
   { label: "Blog", href: "/blog/" },
   { label: "Contact Us", href: "/contact/" }
@@ -143,6 +149,13 @@ export const seoLandingPages = [
       "A professional mobile parts supplier for screens, batteries, tablet parts, laptop parts, and wholesale repair supply programs."
   },
   {
+    slug: "repair-parts-wholesale",
+    title: "Repair Parts Wholesale",
+    h1: "Repair Parts Wholesale",
+    description:
+      "Wholesale repair parts supply for mobile phone screens, batteries, iPad parts, MacBook parts, and distributor repair catalogs."
+  },
+  {
     slug: "oled-screen-supplier",
     title: "OLED Screen Supplier",
     h1: "OLED Screen Supplier",
@@ -155,6 +168,34 @@ export const seoLandingPages = [
     h1: "Samsung Compatible Screen Supplier",
     description:
       "Samsung compatible screen supply for repair shops, wholesalers, and distributors that need tested quality, stable export packing, and fast wholesale response."
+  },
+  {
+    slug: "iphone-screen-manufacturer",
+    title: "iPhone Compatible Screen Manufacturer",
+    h1: "iPhone Compatible Screen Manufacturer",
+    description:
+      "DAKOLAS supports iPhone compatible screen manufacturing supply for repair shops, wholesalers, and distributors needing OLED, INCELL, QC, packing, and 12 months warranty."
+  },
+  {
+    slug: "iphone-battery-manufacturer",
+    title: "iPhone Compatible Battery Manufacturer",
+    h1: "iPhone Compatible Battery Manufacturer",
+    description:
+      "DAKOLAS supplies iPhone compatible batteries for B2B buyers with capacity checks, export packing, stable supply, and 12 months warranty."
+  },
+  {
+    slug: "oled-screen-manufacturer",
+    title: "OLED Screen Manufacturer",
+    h1: "OLED Screen Manufacturer",
+    description:
+      "DAKOLAS provides OLED screen manufacturing supply support for premium repair, wholesale display programs, and distributor sourcing."
+  },
+  {
+    slug: "mobile-phone-parts-manufacturer",
+    title: "Mobile Phone Parts Manufacturer",
+    h1: "Mobile Phone Parts Manufacturer",
+    description:
+      "DAKOLAS is a professional mobile phone parts supplier for screens, batteries, iPad parts, MacBook parts, and wholesale repair components worldwide."
   }
 ];
 
@@ -169,6 +210,10 @@ export const allStaticPaths = [
   "macbook-parts",
   "factory",
   "quality-control",
+  "about-dakolas",
+  "why-dakolas",
+  "warranty-policy",
+  "shipping-policy",
   "about",
   "contact",
   "blog",

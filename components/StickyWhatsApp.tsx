@@ -5,7 +5,7 @@ export function StickyWhatsApp() {
     <a
       href={siteConfig.whatsappHref}
       aria-label="Contact DAKOLAS on WhatsApp"
-      className="focus-ring fixed bottom-4 right-4 z-50 inline-flex h-11 w-11 items-center justify-center rounded-full bg-[#25d366] text-white shadow-xl shadow-[#071f45]/20 transition hover:-translate-y-0.5 hover:bg-[#1ebc5b] sm:bottom-5 sm:right-5 sm:h-14 sm:w-14"
+      className="focus-ring fixed bottom-24 right-4 z-50 inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-[#25d366] px-4 text-white shadow-xl shadow-[#071f45]/20 transition hover:-translate-y-0.5 hover:bg-[#1ebc5b] sm:bottom-24 sm:right-5 sm:min-h-14 sm:px-5"
     >
       <svg viewBox="0 0 32 32" className="h-5 w-5 sm:h-7 sm:w-7" fill="none" aria-hidden="true">
         <path
@@ -17,6 +17,7 @@ export function StickyWhatsApp() {
           fill="#fff"
         />
       </svg>
+      <span className="hidden text-sm font-extrabold sm:inline">WhatsApp Quote</span>
     </a>
   );
 }

@@ -1,4 +1,4 @@
-import { ButtonLink } from "@/components/ButtonLink";
+import { LeadCTAGroup } from "@/components/LeadCTAGroup";
 
 export function CTASection() {
   return (
@@ -10,9 +10,7 @@ export function CTASection() {
             Send your product list and target market. DAKOLAS will reply with available models, quality options, lead time, and quotation details.
           </p>
         </div>
-        <ButtonLink href="/contact/" variant="light" className="shrink-0">
-          Get Quote
-        </ButtonLink>
+        <LeadCTAGroup light className="shrink-0" />
       </div>
     </section>
   );

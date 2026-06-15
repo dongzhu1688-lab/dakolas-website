@@ -20,6 +20,7 @@ html {
 
 body {
   margin: 0;
+  padding-bottom: 78px;
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
@@ -39,7 +40,8 @@ textarea {
 }
 
 .container {
-  width: min(1120px, calc(100% - 32px));
+  width: min(1120px, calc(100vw - 32px));
+  max-width: 100%;
   margin-inline: auto;
 }
 

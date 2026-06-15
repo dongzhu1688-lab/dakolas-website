@@ -2,10 +2,13 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { CategoryCard } from "@/components/CategoryCard";
 import { CTASection } from "@/components/CTASection";
+import { CustomerInquiryWorkflow } from "@/components/CustomerInquiryWorkflow";
+import { FAQSection } from "@/components/FAQSection";
 import { FeatureCard } from "@/components/FeatureCard";
 import { Hero } from "@/components/Hero";
 import { ProductCard } from "@/components/ProductCard";
 import { SectionHeading } from "@/components/SectionHeading";
+import { productLinePages } from "@/lib/seo-expansion";
 import { categories, featuredProducts, productHierarchy, sellingPoints } from "@/lib/site";
 import { createMetadata } from "@/lib/metadata";
 
@@ -49,11 +52,15 @@ export default function HomePage() {
                   </Link>
                 </div>
                 <div className="mt-6 grid gap-3 sm:grid-cols-2">
-                  {group.lines.map((line) => (
-                    <div key={line} className="rounded-md border border-[#d9e5f4] bg-[#f6fbff] px-4 py-4 font-bold text-[#073b84]">
-                      {line}
-                    </div>
-                  ))}
+                  {group.lines.map((line) => {
+                    const linePage = productLinePages.find((item) => item.name === line);
+
+                    return (
+                      <Link key={line} href={linePage ? `/product-lines/${linePage.slug}/` : group.href} className="focus-ring rounded-md border border-[#d9e5f4] bg-[#f6fbff] px-4 py-4 font-bold text-[#073b84] hover:border-[#0756b8]">
+                        {line}
+                      </Link>
+                    );
+                  })}
                 </div>
               </article>
             ))}
@@ -106,6 +113,8 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+      <CustomerInquiryWorkflow />
+      <FAQSection />
       <CTASection />
     </>
   );
